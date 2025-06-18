@@ -1,4 +1,5 @@
 import {FaArrowRight, FaMapMarkerAlt} from "react-icons/fa";
+import {NavLink} from "react-router-dom";
 
 function Home() {
     return (
@@ -27,7 +28,7 @@ function Home() {
                         <button
                             className="w-full md:w-auto mt-8 md:mt-0 flex items-center justify-center gap-2 border rounded-xl px-4 py-2 hover:bg-slate-700 hover:text-blue-500 hover:border-transparent transition duration-200"
                         >
-                            <a href="/about" className="font-medium">About me</a>
+                            <NavLink to="/about" className="font-medium">About me</NavLink>
                             <FaArrowRight />
                         </button>
                 </div>
@@ -49,9 +50,9 @@ function Home() {
                             <p className="text-sm  mb-4">
                                 Another quick summary or highlight of the project’s goals or technologies.
                             </p>
-                            <a href="#" className="text-blue-500 hover:underline flex items-center gap-2 font-medium">
+                            <NavLink to="#" className="text-blue-500 hover:underline flex items-center gap-2 font-medium">
                                 View project <FaArrowRight className="group-hover:animate-flecheGaucheDroite"/>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
 
@@ -64,9 +65,9 @@ function Home() {
                             <p className="text-sm  mb-4">
                                 Another quick summary or highlight of the project’s goals or technologies.
                             </p>
-                            <a href="#" className="text-blue-500 hover:underline flex items-center gap-2 font-medium">
+                            <NavLink to="#" className="text-blue-500 hover:underline flex items-center gap-2 font-medium">
                                 View project <FaArrowRight className="group-hover:animate-flecheGaucheDroite"/>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>
@@ -75,7 +76,7 @@ function Home() {
                     <div className="hidden md:flex flex-grow  border-t-2 border-dashed border-slate-400"></div>
                     <button
                         className="w-full md:w-auto mt-8 md:mt-0 flex items-center justify-center gap-2 border rounded-xl px-4 py-2 hover:bg-slate-700 hover:text-blue-500 hover:border-transparent transition duration-200">
-                        <a href="/projects" className="font-medium">See all projects</a>
+                        <NavLink to="/projects" className="font-medium">See all projects</NavLink>
                         <FaArrowRight/>
                     </button>
                 </div>
@@ -165,7 +166,7 @@ function Home() {
                     <div className="flex-grow  border-t-2 border-dashed border-slate-400"></div>
                     <button
                         className="w-full md:w-auto flex items-center justify-center gap-2 border rounded-xl px-4 py-2 hover:bg-slate-700 hover:text-blue-500 hover:border-transparent transition duration-200">
-                        <a href="/stack" className="font-medium">See all stack</a>
+                        <NavLink to="/stack" className="font-medium">See all stack</NavLink>
                         <FaArrowRight/>
                     </button>
                 </div>
