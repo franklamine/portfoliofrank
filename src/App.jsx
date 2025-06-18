@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createHashRouter, RouterProvider} from 'react-router-dom';
 import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Project from './pages/Project.jsx';
@@ -6,7 +6,7 @@ import Stack from './pages/Stack.jsx';
 import Contact from './pages/Contact.jsx';
 import RootLayout from './layouts/RootLayout.jsx';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
     {
         path: '/',
         element: <RootLayout />, // Le layout commun
