@@ -30,7 +30,7 @@ function Footer() {
                     {/* Contact & Réseaux */}
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact</h4>
-                        <p className="text-sm mb-4">frank@example.com</p>
+                        <p className="text-sm mb-4">fokamfranklamine@gmail.com</p>
                         <div className="flex space-x-6 text-xl">
                             <a href="mailto:frank@example.com" aria-label="Email" className="hover:text-blue-500 transition"><FaEnvelope /></a>
                             <a href="https://twitter.com/tonprofil" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition"><FaTwitter /></a>

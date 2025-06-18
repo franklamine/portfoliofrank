@@ -18,7 +18,7 @@ export default {
       },
       animation:{
         flecheGaucheDroite: "flecheGaucheDroite 1s infinite linear",
-          scrollX: 'scrollX 50s linear infinite',
+          scrollX: 'scrollX 4s linear infinite',
       },
 
     },
