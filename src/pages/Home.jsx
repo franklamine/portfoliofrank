@@ -18,19 +18,19 @@ function Home() {
                     {/* Localisation + séparateur */}
                     <div className="flex items-center w-full md:w-auto flex-1">
                         <div className="flex items-center gap-2 whitespace-nowrap">
-                            <FaMapMarkerAlt className="text-blue-500 text-lg" />
+                            <FaMapMarkerAlt className="text-blue-500 text-lg"/>
                             <span className="font-medium">Québec, Canada</span>
                         </div>
                         <div className="flex-grow border-t-2 border-dashed border-slate-400 ml-4"></div>
                     </div>
 
                     {/* Bouton responsive */}
-                        <button
-                            className="w-full md:w-auto mt-8 md:mt-0 flex items-center justify-center gap-2 border rounded-xl px-4 py-2 hover:bg-slate-700 hover:text-blue-500 hover:border-transparent transition duration-200"
-                        >
-                            <NavLink to="/about" className="font-medium">About me</NavLink>
-                            <FaArrowRight />
-                        </button>
+                    <button
+                        className="w-full md:w-auto mt-8 md:mt-0 flex items-center justify-center gap-2 border rounded-xl px-4 py-2 hover:bg-slate-700 hover:text-blue-500 hover:border-transparent transition duration-200"
+                    >
+                        <NavLink to="/about" className="font-medium">About me</NavLink>
+                        <FaArrowRight/>
+                    </button>
                 </div>
 
             </section>
@@ -50,7 +50,8 @@ function Home() {
                             <p className="text-sm  mb-4">
                                 Another quick summary or highlight of the project’s goals or technologies.
                             </p>
-                            <NavLink to="#" className="text-blue-500 hover:underline flex items-center gap-2 font-medium">
+                            <NavLink to="#"
+                                     className="text-blue-500 hover:underline flex items-center gap-2 font-medium">
                                 View project <FaArrowRight className="group-hover:animate-flecheGaucheDroite"/>
                             </NavLink>
                         </div>
@@ -65,7 +66,8 @@ function Home() {
                             <p className="text-sm  mb-4">
                                 Another quick summary or highlight of the project’s goals or technologies.
                             </p>
-                            <NavLink to="#" className="text-blue-500 hover:underline flex items-center gap-2 font-medium">
+                            <NavLink to="#"
+                                     className="text-blue-500 hover:underline flex items-center gap-2 font-medium">
                                 View project <FaArrowRight className="group-hover:animate-flecheGaucheDroite"/>
                             </NavLink>
                         </div>
@@ -123,6 +125,7 @@ function Home() {
 
             </section>
 
+            {/*session stack*/}
             <section className="pb-10 mx-5">
                 <h2 className="text-3xl font-bold text-left mt-8 md:mt-0">Stack</h2>
 
@@ -172,6 +175,9 @@ function Home() {
                 </div>
             </section>
 
+            <section className="mb-10 mx-5">
+            <NavLink to="/contact" className="text-3xl md:text-8xl">Do you have a project?</NavLink>
+            </section>
         </main>
     );
 }
