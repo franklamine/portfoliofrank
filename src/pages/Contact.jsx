@@ -1,6 +1,4 @@
 import React from 'react'
-import {NavLink} from "react-router-dom";
-import {FaArrowRight} from "react-icons/fa";
 
 function Contact() {
     return (
