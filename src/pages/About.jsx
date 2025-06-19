@@ -8,7 +8,7 @@ function About() {
 
             {/*session about me*/}
             <section className=" py-5 mx-5">
-                <h1 className="text-4xl md:text-5xl font-bold text-left mt-8 md:mt-0">Find out who i'm</h1>
+                <h1 className="text-4xl md:text-5xl font-bold text-left mt-20 md:mt-0">Find out who i'm</h1>
                 <p className="mt-4 text-left text-xl">
                     I'm a passionate full-stack developer dedicated to building high-performance
                     digital solutions. I design and develop modern, robust web applications using

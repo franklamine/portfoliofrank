@@ -1,4 +1,5 @@
-import { FaTwitter, FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+import {FaTwitter, FaLinkedin, FaGithub, FaEnvelope, FaFacebook} from "react-icons/fa";
+import {NavLink} from "react-router-dom";
 
 function Footer() {
     return (
@@ -9,7 +10,7 @@ function Footer() {
 
                     {/* À propos */}
                     <div>
-                        <h3 className="text-xl font-semibold mb-4">Frank Portfolio</h3>
+                        <h3 className="text-xl font-semibold mb-4">Find out who i'm</h3>
                         <p className="text-sm leading-relaxed">
                             Développeur full-stack passionné, je crée des expériences web modernes, accessibles et performantes.
                         </p>
@@ -17,32 +18,33 @@ function Footer() {
 
                     {/* Liens utiles */}
                     <div>
-                        <h4 className="text-lg font-semibold mb-4">Liens rapides</h4>
+                        <h4 className="text-lg font-semibold mb-4">Quick links</h4>
                         <ul className="space-y-2 text-sm">
-                            <li><a href="/" className="hover:text-blue-500 transition">Accueil</a></li>
-                            <li><a href="/about" className="hover:text-blue-500 transition">À propos</a></li>
-                            <li><a href="/projects" className="hover:text-blue-500 transition">Projets</a></li>
-                            <li><a href="/stack" className="hover:text-blue-500 transition">Stack</a></li>
-                            <li><a href="/contact" className="hover:text-blue-500 transition">Contact</a></li>
+                            <li><NavLink to="/" className="hover:text-blue-500 transition">Home</NavLink></li>
+                            <li><NavLink to="/about" className="hover:text-blue-500 transition">About</NavLink></li>
+                            <li><NavLink to="/projects" className="hover:text-blue-500 transition">Projects</NavLink></li>
+                            <li><NavLink to="/stack" className="hover:text-blue-500 transition">Stack</NavLink></li>
+                            <li><NavLink to="/contact" className="hover:text-blue-500 transition">Contact</NavLink></li>
                         </ul>
                     </div>
 
                     {/* Contact & Réseaux */}
                     <div>
                         <h4 className="text-lg font-semibold mb-4">Contact</h4>
-                        <p className="text-sm mb-4">fokamfranklamine@gmail.com</p>
-                        <div className="flex space-x-6 text-xl">
-                            <a href="mailto:frank@example.com" aria-label="Email" className="hover:text-blue-500 transition"><FaEnvelope /></a>
-                            <a href="https://twitter.com/tonprofil" target="_blank" rel="noopener noreferrer" className="hover:text-blue-400 transition"><FaTwitter /></a>
-                            <a href="https://linkedin.com/in/tonprofil" target="_blank" rel="noopener noreferrer" className="hover:text-blue-600 transition"><FaLinkedin /></a>
-                            <a href="https://github.com/tonprofil" target="_blank" rel="noopener noreferrer" className="hover:text-gray-100 transition"><FaGithub /></a>
+                        <NavLink to="mailto:fokamfranklamine@gmail.com" className="text-sm hover:text-blue-500 transition duration-500">fokamfranklamine@gmail.com</NavLink>
+                        <div className="flex space-x-6 text-xl mt-5">
+                            <NavLink to="https://github.com/franklamine/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-500"><FaGithub /></NavLink>
+                            <NavLink to="https://www.linkedin.com/in/frank-lamine-202b72286/" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-500"><FaLinkedin /></NavLink>
+                            <NavLink to="mailto:fokamfranklamine@gmail.com" aria-label="Email" className="hover:text-blue-500 transition duration-500"><FaEnvelope /></NavLink>
+                            <NavLink to="https://x.com/franklaminedev" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-500"><FaTwitter /></NavLink>
+                            <NavLink to="https://www.facebook.com/dieny.romeo" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500 transition duration-500"><FaFacebook /></NavLink>
                         </div>
                     </div>
                 </div>
 
                 {/* Copyright centré */}
                 <div className="mt-10 border-t border-slate-700 pt-6 text-center text-xs text-slate-500 select-none">
-                    © Copyright {new Date().getFullYear()}. Tous droits réservés.
+                    © Copyright 2024. Tous droits réservés.
                 </div>
             </div>
         </footer>

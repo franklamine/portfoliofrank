@@ -23,7 +23,7 @@ function Asidebar() {
 
     return (
         <nav
-            className="fixed w-full md:w-1/6 md:h-screen bg-slate-700 p-2 md:p-5  font-bold  border-r-2 flex flex-col justify-between">
+            className="fixed z-50 w-full md:w-1/6 md:h-screen bg-slate-700 p-2 md:p-5  font-bold  border-r-2 flex flex-col justify-between">
 
             {/* Mobile Toggle Button */}
             {isMobile && (

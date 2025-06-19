@@ -12,7 +12,7 @@ function Project() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 mx-5">
                 {[...Array(12)].map((_, index) => (
                     <div
-                        className="group rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transform duration-500">
+                       key={index} className="group rounded-xl shadow-lg overflow-hidden hover:shadow-2xl hover:scale-105 transform duration-500">
                         <img src="logo3.png" alt="project" className="w-full h-96 object-cover"/>
                         <div className="p-4">
                             <h3 className="text-xl font-semibold mb-2"> Project #{index}</h3>
